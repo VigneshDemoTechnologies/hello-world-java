@@ -26,6 +26,16 @@
 		<sonar.java.binaries>target/classes</sonar.java.binaries>
 		<sonar.exclusions>**/*.css</sonar.exclusions>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://13.201.3.37:8081/repository/hello-world/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://13.201.3.37:8081/repository/hello-world-snapshot/</url>
+		</snapshotRepository>
+    </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
